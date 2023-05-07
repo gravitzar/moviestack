@@ -1,4 +1,4 @@
-package com.zerocoders.moviestack.tmdb
+package com.zerocoders.moviestack.model
 
 import kotlinx.serialization.Serializable
 

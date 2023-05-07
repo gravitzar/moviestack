@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.zerocoders.moviestack.SessionPreferenceManager
 import com.zerocoders.moviestack.network.RemoteDataSource
-import com.zerocoders.moviestack.tmdb.Movie
+import com.zerocoders.moviestack.model.Movie
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

@@ -1,9 +1,9 @@
 package com.zerocoders.moviestack.network
 
-import com.zerocoders.moviestack.tmdb.CreditResult
-import com.zerocoders.moviestack.tmdb.Movie
-import com.zerocoders.moviestack.tmdb.MoviePageResult
-import com.zerocoders.moviestack.tmdb.VideoResult
+import com.zerocoders.moviestack.model.CreditResult
+import com.zerocoders.moviestack.model.Movie
+import com.zerocoders.moviestack.model.MoviePageResult
+import com.zerocoders.moviestack.model.VideoResult
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -15,20 +15,6 @@ import javax.inject.Inject
 class TmdbRemoteDataSourceImpl @Inject constructor(
     private val client: HttpClient
 ) : RemoteDataSource {
-
-//    override suspend fun getMovieGenres(): ResultOf<GenreResponse> {
-//        return withContext(Dispatchers.IO) {
-//            try {
-//                ResultOf.Success(
-//                    client.get("/genre/movie/list") {
-//                        parameter("language", "en-US")
-//                    }.body()
-//                )
-//            } catch (e: Exception) {
-//                ResultOf.Failure(e)
-//            }
-//        }
-//    }
 
     override suspend fun getPopularMovies(page: Int): MoviePageResult? {
         return withContext(Dispatchers.IO) {

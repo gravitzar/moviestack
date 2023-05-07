@@ -64,13 +64,13 @@ import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 import com.zerocoders.moviestack.utils.applyGradient
 import com.zerocoders.moviestack.utils.roundToSingleFraction
 import com.zerocoders.moviestack.utils.toRuntimeString
-import com.zerocoders.moviestack.widgets.common.BoxWithElevation
+import com.zerocoders.moviestack.widgets.common.BoxWithShape
 import com.zerocoders.moviestack.widgets.common.ExpandableText
 import com.zerocoders.moviestack.widgets.common.TitleText
 import com.zerocoders.moviestack.widgets.common.VideoThumbnail
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
-import com.zerocoders.moviestack.tmdb.Genre
-import com.zerocoders.moviestack.tmdb.Movie
+import com.zerocoders.moviestack.model.Genre
+import com.zerocoders.moviestack.model.Movie
 import kotlinx.datetime.LocalDate
 import java.util.Locale
 import kotlin.math.min
@@ -124,7 +124,7 @@ fun MovieBackDrop(uiState: MovieDetailScreenUiState) {
         }
 
         else -> {
-            BoxWithElevation(
+            BoxWithShape(
                 color = Color.LightGray,
                 modifier = Modifier
                     .fillMaxWidth()

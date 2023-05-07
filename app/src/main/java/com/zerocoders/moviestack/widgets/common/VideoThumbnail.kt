@@ -20,9 +20,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.zerocoders.moviestack.tmdb.Video
+import com.zerocoders.moviestack.model.Video
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
-
 
 @Composable
 fun VideoThumbnail(video: Video, onVideoClicked: (String) -> Unit) {

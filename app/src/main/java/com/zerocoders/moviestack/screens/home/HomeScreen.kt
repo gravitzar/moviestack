@@ -19,13 +19,13 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_1_1_5
 import com.zerocoders.moviestack.utils.applyGradient
-import com.zerocoders.moviestack.widgets.MoviePoster
+import com.zerocoders.moviestack.widgets.common.MoviePoster
 import com.zerocoders.moviestack.widgets.common.TitleText
 import com.zerocoders.moviestack.widgets.common.TopBar
 import com.zerocoders.moviestack.widgets.common.TopTrendingMovie
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
 import com.zerocoders.moviestack.widgets.common.animatedItem
-import com.zerocoders.moviestack.tmdb.Movie
+import com.zerocoders.moviestack.model.Movie
 
 @Composable
 internal fun HomeScreenRoute(

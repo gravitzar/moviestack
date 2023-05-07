@@ -58,7 +58,7 @@ fun TopBar(
 
 @Preview(
     showBackground = true,
-    name = "TopBar Preview", device = "id:Realme XT"
+    name = "TopBar Preview",
 )
 @Composable
 fun TestPreview() {
