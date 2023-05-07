@@ -3,8 +3,8 @@ package com.zerocoders.moviestack.network
 import android.util.Log
 import com.zerocoders.moviestack.Env.API_KEY
 import com.zerocoders.moviestack.Env.DOMAIN
-import com.zerocoders.showdiary.tmdb.MediaListItem
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.MediaListItem
+import com.zerocoders.moviestack.tmdb.Movie
 import io.ktor.client.*
 import io.ktor.client.plugins.*
 import io.ktor.client.plugins.contentnegotiation.*

@@ -1,7 +1,5 @@
 package com.zerocoders.moviestack.tmdb
 
-import com.zerocoders.showdiary.tmdb.VideoSite
-import com.zerocoders.showdiary.tmdb.VideoType
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

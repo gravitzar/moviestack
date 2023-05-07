@@ -7,7 +7,7 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.zerocoders.moviestack.SessionPreferenceManager
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Movie
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

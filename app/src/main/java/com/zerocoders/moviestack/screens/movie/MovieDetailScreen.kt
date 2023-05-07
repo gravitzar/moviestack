@@ -69,8 +69,8 @@ import com.zerocoders.moviestack.widgets.common.ExpandableText
 import com.zerocoders.moviestack.widgets.common.TitleText
 import com.zerocoders.moviestack.widgets.common.VideoThumbnail
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
-import com.zerocoders.showdiary.tmdb.Genre
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Genre
+import com.zerocoders.moviestack.tmdb.Movie
 import kotlinx.datetime.LocalDate
 import java.util.Locale
 import kotlin.math.min
@@ -115,7 +115,7 @@ internal fun MovieDetailScreenRoute(
 fun MovieBackDrop(uiState: MovieDetailScreenUiState) {
     when (uiState.trailerVideoState) {
         is TrailerState.Success -> {
-            com.zerocoders.moviestack.widgets.video2.VideoPlayer(
+            com.zerocoders.moviestack.widgets.player.VideoPlayer(
                 modifier = Modifier
                     .fillMaxWidth()
                     .aspectRatio(ASPECT_RATIO_16_9),

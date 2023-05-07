@@ -23,7 +23,7 @@ import com.zerocoders.moviestack.ui.theme.montserratMediumTextStyle
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 import com.zerocoders.moviestack.utils.applyGradient
 import com.zerocoders.moviestack.utils.toRuntimeString
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Movie
 import kotlin.math.min
 
 @Composable

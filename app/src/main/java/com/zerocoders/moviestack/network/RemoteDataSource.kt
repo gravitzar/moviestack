@@ -1,6 +1,9 @@
 package com.zerocoders.moviestack.network
 
-import com.zerocoders.showdiary.tmdb.*
+import com.zerocoders.moviestack.tmdb.CreditResult
+import com.zerocoders.moviestack.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.MoviePageResult
+import com.zerocoders.moviestack.tmdb.VideoResult
 
 interface RemoteDataSource {
 

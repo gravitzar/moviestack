@@ -1,4 +1,4 @@
-package com.zerocoders.showdiary.tmdb
+package com.zerocoders.moviestack.tmdb
 
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.KSerializer

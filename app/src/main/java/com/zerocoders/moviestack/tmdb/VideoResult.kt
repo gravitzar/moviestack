@@ -1,6 +1,5 @@
-package com.zerocoders.showdiary.tmdb
+package com.zerocoders.moviestack.tmdb
 
-import com.zerocoders.moviestack.tmdb.Video
 import kotlinx.serialization.Serializable
 
 @Serializable

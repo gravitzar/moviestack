@@ -45,7 +45,7 @@ fun VideoTrailerScreen(screenState: VideoTrailerScreenState, videoId: String) {
             CircularProgressIndicator()
         }
         if (screenState.isSuccess && !screenState.videoUrl.isNullOrBlank()) {
-            com.zerocoders.moviestack.widgets.video2.VideoPlayer(
+            com.zerocoders.moviestack.widgets.player.VideoPlayer(
                 modifier = Modifier.fillMaxSize(),
                 mediaItemToPlay = MediaItem.fromUri(screenState.videoUrl),
                 setFullScreen = true

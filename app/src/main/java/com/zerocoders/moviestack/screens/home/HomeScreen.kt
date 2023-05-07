@@ -25,7 +25,7 @@ import com.zerocoders.moviestack.widgets.common.TopBar
 import com.zerocoders.moviestack.widgets.common.TopTrendingMovie
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
 import com.zerocoders.moviestack.widgets.common.animatedItem
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Movie
 
 @Composable
 internal fun HomeScreenRoute(

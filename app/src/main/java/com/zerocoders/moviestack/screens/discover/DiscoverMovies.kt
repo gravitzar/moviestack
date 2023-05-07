@@ -26,7 +26,7 @@ import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
 import com.zerocoders.moviestack.widgets.MoviePoster
 import com.zerocoders.moviestack.widgets.common.TopBar
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Movie
 
 @Composable
 internal fun DiscoverMoviesRoute(

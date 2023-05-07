@@ -1,9 +1,9 @@
 package com.zerocoders.moviestack.network
 
-import com.zerocoders.showdiary.tmdb.CreditResult
-import com.zerocoders.showdiary.tmdb.Movie
-import com.zerocoders.showdiary.tmdb.MoviePageResult
-import com.zerocoders.showdiary.tmdb.VideoResult
+import com.zerocoders.moviestack.tmdb.CreditResult
+import com.zerocoders.moviestack.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.MoviePageResult
+import com.zerocoders.moviestack.tmdb.VideoResult
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get

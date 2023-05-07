@@ -3,7 +3,7 @@ package com.zerocoders.moviestack.screens.discover
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.zerocoders.moviestack.network.RemoteDataSource
-import com.zerocoders.showdiary.tmdb.Movie
+import com.zerocoders.moviestack.tmdb.Movie
 import javax.inject.Inject
 
 class DiscoverMoviesPagingSource @Inject constructor(
