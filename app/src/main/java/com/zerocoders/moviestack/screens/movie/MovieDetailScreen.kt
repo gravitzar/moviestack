@@ -115,7 +115,7 @@ internal fun MovieDetailScreenRoute(
 fun MovieBackDrop(uiState: MovieDetailScreenUiState) {
     when (uiState.trailerVideoState) {
         is TrailerState.Success -> {
-            com.zerocoders.moviestack.widgets.video2.VideoPlayer(
+            com.zerocoders.moviestack.widgets.player.VideoPlayer(
                 modifier = Modifier
                     .fillMaxWidth()
                     .aspectRatio(ASPECT_RATIO_16_9),
