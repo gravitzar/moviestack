@@ -24,9 +24,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
+import com.zerocoders.moviestack.model.Movie
 import com.zerocoders.moviestack.widgets.common.MoviePoster
 import com.zerocoders.moviestack.widgets.common.TopBar
-import com.zerocoders.moviestack.model.Movie
 
 @Composable
 internal fun DiscoverMoviesRoute(

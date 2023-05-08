@@ -1,5 +1,6 @@
-package com.zerocoders.moviestack.model
+package com.zerocoders.moviestack.network.serializer
 
+import com.zerocoders.moviestack.utils.tryLocalDate
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.builtins.nullable

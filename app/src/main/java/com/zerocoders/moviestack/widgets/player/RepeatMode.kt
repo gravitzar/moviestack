@@ -2,7 +2,6 @@ package com.zerocoders.moviestack.widgets.player
 
 import androidx.compose.runtime.Stable
 import com.google.android.exoplayer2.Player
-import java.lang.IllegalStateException
 
 @Stable
 @Suppress("UNUSED_PARAMETER")

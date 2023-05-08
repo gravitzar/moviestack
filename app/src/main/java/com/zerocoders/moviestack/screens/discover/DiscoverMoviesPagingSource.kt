@@ -2,8 +2,8 @@ package com.zerocoders.moviestack.screens.discover
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.zerocoders.moviestack.network.RemoteDataSource
 import com.zerocoders.moviestack.model.Movie
+import com.zerocoders.moviestack.network.RemoteDataSource
 import javax.inject.Inject
 
 class DiscoverMoviesPagingSource @Inject constructor(

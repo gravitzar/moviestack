@@ -13,7 +13,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
-import java.lang.IllegalStateException
 
 fun Modifier.applyGradient(): Modifier {
     return drawWithCache {

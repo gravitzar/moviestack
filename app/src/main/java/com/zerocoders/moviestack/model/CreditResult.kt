@@ -1,14 +1,8 @@
 package com.zerocoders.moviestack.model
 
+import com.zerocoders.moviestack.model.common.AnyMedia
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-
-@Serializable
-data class CreditResult(
-    @SerialName("id") val id: Int,
-    @SerialName("cast") val cast: List<Cast> = emptyList(),
-    @SerialName("crew") val crew: List<Crew> = emptyList()
-)
 
 @Serializable
 data class Crew(
@@ -34,9 +28,16 @@ data class Cast(
     @SerialName("name") val name: String,
     @SerialName("original_name") val originalName: String,
     @SerialName("popularity") val popularity: Float,
-    @SerialName("profile_path") val profilePath: String?=null,
+    @SerialName("profile_path") val profilePath: String? = null,
     @SerialName("cast_id") val castId: Int,
     @SerialName("character") val character: String,
     @SerialName("credit_id") val creditId: String,
     @SerialName("order") val order: Int = 0
 )
+
+@Serializable
+data class CreditResult(
+    @SerialName("id") override val id: Int,
+    @SerialName("cast") val cast: List<Cast> = emptyList(),
+    @SerialName("crew") val crew: List<Crew> = emptyList()
+) : AnyMedia

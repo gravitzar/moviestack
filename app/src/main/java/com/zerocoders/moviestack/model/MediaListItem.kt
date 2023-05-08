@@ -1,13 +1,15 @@
 package com.zerocoders.moviestack.model
 
+import com.zerocoders.moviestack.model.common.AnyMedia
+import com.zerocoders.moviestack.model.common.BackdropMedia
+import com.zerocoders.moviestack.model.common.PosterMedia
+import com.zerocoders.moviestack.model.common.RatingItem
+import com.zerocoders.moviestack.network.serializer.LocalDateSerializer
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.Polymorphic
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-/**
- * This item is a movie listed.
- */
 @Polymorphic
 @Serializable
 sealed class MediaListItem : AnyMedia, BackdropMedia, PosterMedia, RatingItem {

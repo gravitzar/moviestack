@@ -57,6 +57,8 @@ import coil.compose.rememberAsyncImagePainter
 import coil.request.ImageRequest
 import com.google.android.exoplayer2.MediaItem
 import com.zerocoders.moviestack.R
+import com.zerocoders.moviestack.model.Genre
+import com.zerocoders.moviestack.model.Movie
 import com.zerocoders.moviestack.ui.theme.Montserrat
 import com.zerocoders.moviestack.ui.theme.robotoMediumTextStyle
 import com.zerocoders.moviestack.ui.theme.robotoNormalTextStyle
@@ -69,8 +71,7 @@ import com.zerocoders.moviestack.widgets.common.ExpandableText
 import com.zerocoders.moviestack.widgets.common.TitleText
 import com.zerocoders.moviestack.widgets.common.VideoThumbnail
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
-import com.zerocoders.moviestack.model.Genre
-import com.zerocoders.moviestack.model.Movie
+import com.zerocoders.moviestack.widgets.player.VideoPlayer
 import kotlinx.datetime.LocalDate
 import java.util.Locale
 import kotlin.math.min
@@ -115,7 +116,7 @@ internal fun MovieDetailScreenRoute(
 fun MovieBackDrop(uiState: MovieDetailScreenUiState) {
     when (uiState.trailerVideoState) {
         is TrailerState.Success -> {
-            com.zerocoders.moviestack.widgets.player.VideoPlayer(
+            VideoPlayer(
                 modifier = Modifier
                     .fillMaxWidth()
                     .aspectRatio(ASPECT_RATIO_16_9),

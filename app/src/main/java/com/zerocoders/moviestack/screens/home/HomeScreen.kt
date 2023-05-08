@@ -16,16 +16,17 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.zerocoders.moviestack.model.Movie
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_1_1_5
 import com.zerocoders.moviestack.utils.applyGradient
+import com.zerocoders.moviestack.utils.dummyMovieList
 import com.zerocoders.moviestack.widgets.common.MoviePoster
 import com.zerocoders.moviestack.widgets.common.TitleText
 import com.zerocoders.moviestack.widgets.common.TopBar
 import com.zerocoders.moviestack.widgets.common.TopTrendingMovie
 import com.zerocoders.moviestack.widgets.common.animatedHorizontalListItemsWithTitle
 import com.zerocoders.moviestack.widgets.common.animatedItem
-import com.zerocoders.moviestack.model.Movie
 
 @Composable
 internal fun HomeScreenRoute(
@@ -141,6 +142,7 @@ fun HomeScreen(
             )
         }
         animatedHorizontalListItemsWithTitle(
+            modifier = Modifier.padding(bottom = 8.dp),
             contentPadding = PaddingValues(horizontal = 8.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             listItems = state.popularMovies,
@@ -164,78 +166,6 @@ fun HomeScreen(
         }
     }
 }
-
-val dummyMovieList = listOf(
-    Movie(
-        posterPath = null,
-        adult = false,
-        overview = "has",
-        releaseDate = null,
-        genresIds = listOf(),
-        genres = listOf(),
-        id = 9284,
-        originalTitle = "alterum",
-        originalLanguage = "eros",
-        title = "rutrum",
-        backdropPath = null,
-        popularity = 4.5f,
-        voteCount = 8941,
-        video = false,
-        voteAverage = 6.7f,
-        runtime = null
-    ), Movie(
-        posterPath = null,
-        adult = false,
-        overview = "has",
-        releaseDate = null,
-        genresIds = listOf(),
-        genres = listOf(),
-        id = 9284,
-        originalTitle = "alterum",
-        originalLanguage = "eros",
-        title = "rutrum",
-        backdropPath = null,
-        popularity = 4.5f,
-        voteCount = 8941,
-        video = false,
-        voteAverage = 6.7f,
-        runtime = null
-    ), Movie(
-        posterPath = null,
-        adult = false,
-        overview = "has",
-        releaseDate = null,
-        genresIds = listOf(),
-        genres = listOf(),
-        id = 9284,
-        originalTitle = "alterum",
-        originalLanguage = "eros",
-        title = "rutrum",
-        backdropPath = null,
-        popularity = 4.5f,
-        voteCount = 8941,
-        video = false,
-        voteAverage = 6.7f,
-        runtime = null
-    ), Movie(
-        posterPath = null,
-        adult = false,
-        overview = "has",
-        releaseDate = null,
-        genresIds = listOf(),
-        genres = listOf(),
-        id = 9284,
-        originalTitle = "alterum",
-        originalLanguage = "eros",
-        title = "rutrum",
-        backdropPath = null,
-        popularity = 4.5f,
-        voteCount = 8941,
-        video = false,
-        voteAverage = 6.7f,
-        runtime = null
-    )
-)
 
 @Preview(
     showBackground = true,

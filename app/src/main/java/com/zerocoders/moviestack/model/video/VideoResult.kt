@@ -1,11 +1,11 @@
-package com.zerocoders.moviestack.model
+package com.zerocoders.moviestack.model.video
 
 import com.zerocoders.moviestack.model.common.AnyMedia
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Genre(
+data class VideoResult(
     @SerialName("id") override val id: Int,
-    val name: String,
+    val results: List<Video> = emptyList()
 ) : AnyMedia

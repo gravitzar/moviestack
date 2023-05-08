@@ -19,11 +19,11 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import coil.compose.AsyncImagePainter
 import coil.compose.rememberAsyncImagePainter
+import com.zerocoders.moviestack.model.Movie
 import com.zerocoders.moviestack.ui.theme.montserratMediumTextStyle
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 import com.zerocoders.moviestack.utils.applyGradient
 import com.zerocoders.moviestack.utils.toRuntimeString
-import com.zerocoders.moviestack.model.Movie
 import kotlin.math.min
 
 @Composable
@@ -68,7 +68,7 @@ fun TopTrendingMovie(
                 end.linkTo(parent.end)
             },
             text = "#1 • ${movie.title} • ${movie.runtime?.toRuntimeString().orEmpty()}",
-            style = montserratMediumTextStyle.copy(fontSize = 14.sp)
+            style = montserratMediumTextStyle.copy(fontSize = 14.sp, color = Color.White)
         )
     }
 }

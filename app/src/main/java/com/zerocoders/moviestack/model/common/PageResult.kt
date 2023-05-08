@@ -1,4 +1,4 @@
-package com.zerocoders.moviestack.model
+package com.zerocoders.moviestack.model.common
 
 interface PageResult<T> {
     val page: Int

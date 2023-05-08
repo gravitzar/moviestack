@@ -1,4 +1,4 @@
-package com.zerocoders.moviestack.model
+package com.zerocoders.moviestack.model.video
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

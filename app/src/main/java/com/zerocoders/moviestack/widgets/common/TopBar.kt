@@ -43,7 +43,7 @@ fun TopBar(
     ) {
         Text(
             text = title,
-            style = montserratBlackTextStyle.copy(fontSize = 38.sp, color = MaterialTheme.colorScheme.onSurface)
+            style = montserratBlackTextStyle.copy(fontSize = 38.sp)
         )
         IconButton(onClick = { showProfileDialog = true }) {
             Icon(

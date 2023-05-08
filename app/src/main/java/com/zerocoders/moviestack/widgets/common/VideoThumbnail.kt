@@ -20,11 +20,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.zerocoders.moviestack.model.Video
+import com.zerocoders.moviestack.model.video.Video
 import com.zerocoders.moviestack.utils.ASPECT_RATIO_16_9
 
 @Composable
-fun VideoThumbnail(video: Video, onVideoClicked: (String) -> Unit) {
+fun VideoThumbnail(video: Video, onVideoClicked: (String) -> Unit = {}) {
     Box(
         modifier = Modifier
             .width(200.dp)
@@ -53,16 +53,16 @@ fun VideoThumbnail(video: Video, onVideoClicked: (String) -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun VideoThumbnailPreview() {
-    VideoThumbnail(video = Video(
-        id = "fabellas",
-        iso639 = null,
-        iso3166 = null,
-        key = "parturient",
-        site = null,
-        name = null,
-        size = null,
-        type = null
-    ), onVideoClicked = {
-        
-    })
+    VideoThumbnail(
+        video = Video(
+            id = "fabellas",
+            iso639 = null,
+            iso3166 = null,
+            key = "parturient",
+            site = null,
+            name = null,
+            size = null,
+            type = null
+        )
+    )
 }

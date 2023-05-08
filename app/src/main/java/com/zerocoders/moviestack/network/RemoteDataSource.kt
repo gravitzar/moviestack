@@ -3,7 +3,7 @@ package com.zerocoders.moviestack.network
 import com.zerocoders.moviestack.model.CreditResult
 import com.zerocoders.moviestack.model.Movie
 import com.zerocoders.moviestack.model.MoviePageResult
-import com.zerocoders.moviestack.model.VideoResult
+import com.zerocoders.moviestack.model.video.VideoResult
 
 interface RemoteDataSource {
 

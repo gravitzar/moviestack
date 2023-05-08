@@ -6,9 +6,7 @@ import android.app.Activity
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.imePadding
@@ -353,18 +351,15 @@ fun SignUpScreen(
             }
         }
 
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.End
-        ) {
-            Text(
-                text = "Login here...",
-                style = robotoBlackTextStyle,
-                modifier = Modifier.clickable {
+        Text(
+            text = "Login here...",
+            style = robotoBlackTextStyle,
+            modifier = Modifier
+                .padding(top = 20.dp, bottom = 8.dp)
+                .clickable {
                     onNavigateToLogin()
                 }
-            )
-        }
+        )
     }
 }
 

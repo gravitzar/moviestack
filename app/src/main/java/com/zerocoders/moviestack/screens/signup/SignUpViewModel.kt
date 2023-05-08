@@ -75,7 +75,7 @@ class SignUpViewModel @Inject constructor(
         }
 
         val isPhoneOk = if (_uiState.value.phoneNumber.isBlank()) {
-            _uiState.update { it.copy(phoneNumberHasError = true, phoneNumberErrorMessage = "email cannot be empty") }
+            _uiState.update { it.copy(phoneNumberHasError = true, phoneNumberErrorMessage = "phone number cannot be empty") }
             false
         } else {
             _uiState.update { it.copy(phoneNumberHasError = false, phoneNumberErrorMessage = "") }
@@ -90,14 +90,6 @@ class SignUpViewModel @Inject constructor(
             true
         }
 
-//        val isConfirmPasswordIsOk = if (_uiState.value.confirmPassword.isBlank()) {
-//            _uiState.update { it.copy(confirmPasswordHasError = true, confirmPasswordErrorMessage = "password cannot be empty") }
-//            false
-//        } else {
-//            _uiState.update { it.copy(confirmPasswordHasError = false, confirmPasswordErrorMessage = "") }
-//            true
-//        }
-
         val isPasswordsMatched = if (_uiState.value.password != _uiState.value.confirmPassword) {
             _uiState.update { it.copy(confirmPasswordHasError = true, confirmPasswordErrorMessage = "passwords are not same") }
             false
@@ -107,7 +99,7 @@ class SignUpViewModel @Inject constructor(
         }
 
         delay(200)
-        if (isUserNameOk && isPasswordIsOK && isEmailOk && isPhoneOk /*&& isConfirmPasswordIsOk */ && isPasswordsMatched) {
+        if (isUserNameOk && isPasswordIsOK && isEmailOk && isPhoneOk && isPasswordsMatched) {
             setLoggedIn()
             saveUserName(_uiState.value.userName)
         } else {

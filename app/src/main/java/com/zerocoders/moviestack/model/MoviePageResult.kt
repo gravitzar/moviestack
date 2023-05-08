@@ -1,5 +1,6 @@
 package com.zerocoders.moviestack.model
 
+import com.zerocoders.moviestack.model.common.PageResult
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

@@ -1,4 +1,4 @@
-package com.zerocoders.moviestack.model
+package com.zerocoders.moviestack.model.video
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -13,6 +13,4 @@ data class Video(
     @SerialName("name") val name: String? = null,
     @SerialName("size") val size: Int? = null, // 360, 480, 720, 1080
     @SerialName("type") val type: VideoType? = null,
-) {
-    var youtubeLink: String? = null
-}
+)

@@ -115,7 +115,7 @@ dependencies {
     implementation("io.coil-kt:coil-compose:2.3.0")
 
     //Paging 3
-    implementation("androidx.paging:paging-compose:1.0.0-alpha18")
+    implementation("androidx.paging:paging-compose:1.0.0-alpha19")
 
     // Ktor Client
     implementation("io.ktor:ktor-client-core:2.2.3")

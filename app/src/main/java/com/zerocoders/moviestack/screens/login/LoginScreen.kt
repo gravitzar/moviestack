@@ -225,7 +225,7 @@ fun LoginScreen(
             text = "Sign Up here...",
             style = robotoBlackTextStyle,
             modifier = Modifier
-                .padding(top = 20.dp)
+                .padding(top = 20.dp, bottom = 8.dp)
                 .clickable {
                     onNavigateToSignUp()
                 }

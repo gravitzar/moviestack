@@ -1,15 +1,14 @@
 package com.zerocoders.moviestack.screens.movie
 
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.zerocoders.moviestack.network.RemoteDataSource
 import com.zerocoders.moviestack.model.Cast
 import com.zerocoders.moviestack.model.Crew
 import com.zerocoders.moviestack.model.Movie
-import com.zerocoders.moviestack.model.Video
-import com.zerocoders.moviestack.model.VideoSite
-import com.zerocoders.moviestack.model.VideoType
+import com.zerocoders.moviestack.model.video.Video
+import com.zerocoders.moviestack.model.video.VideoSite
+import com.zerocoders.moviestack.model.video.VideoType
+import com.zerocoders.moviestack.network.RemoteDataSource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -46,7 +45,6 @@ data class MovieDetailScreenUiState(
 @HiltViewModel
 class MovieDetailViewModel @Inject constructor(
     private val tmdbRemoteDataSource: RemoteDataSource,
-    savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
     private val _uiState = MutableStateFlow(MovieDetailScreenUiState())
     val uiState: StateFlow<MovieDetailScreenUiState> = _uiState.asStateFlow()

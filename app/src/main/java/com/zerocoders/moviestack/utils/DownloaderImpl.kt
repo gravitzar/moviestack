@@ -9,7 +9,6 @@ import org.schabi.newpipe.extractor.downloader.Response
 import org.schabi.newpipe.extractor.exceptions.ReCaptchaException
 import java.util.concurrent.TimeUnit
 
-
 class DownloaderImpl private constructor(
     private val builder: OkHttpClient.Builder
 ) : Downloader() {
@@ -118,9 +117,6 @@ class DownloaderImpl private constructor(
         const val YOUTUBE_DOMAIN = "youtube.com"
         const val RECAPTCHA_COOKIES_KEY = "recaptcha_cookies"
 
-//        https://www.youtube.com/watch?v=l-jBcewRW70
-
-        //        https://www.youtube.com/watch?v=oc_o5DZM3qc
         @Volatile
         private var INSTANCE: DownloaderImpl? = null
 

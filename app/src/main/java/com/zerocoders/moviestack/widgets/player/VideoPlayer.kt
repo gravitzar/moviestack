@@ -53,7 +53,6 @@ fun VideoPlayer(
     @FloatRange(from = 0.0, to = 1.0) volume: Float = 1f,
     onCurrentTimeChanged: (Long) -> Unit = {},
     onFullScreenEnter: () -> Unit = {},
-    onFullScreenExit: () -> Unit = {},
     handleAudioFocus: Boolean = true,
     setFullScreen: Boolean = false,
     playerInstance: ExoPlayer.() -> Unit = {},
